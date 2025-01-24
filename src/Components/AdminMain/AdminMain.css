@@ -1,0 +1,40 @@
+.admin-main {
+  margin-left: 250px;
+  margin-top: 100px;
+}
+.main-body {
+  width: 80%;
+}
+.main-body hr {
+  margin-top: 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-header-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+  /* border: 1px solid blueviolet; */
+}
+.main-product-list {
+  margin: 20px 0;
+  overflow-y: auto;
+  display: grid;
+  row-gap: 10px;
+  /* height: 100vh; */
+}
+.product-img {
+  width: 100px;
+}
+.main-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-remove-icon {
+  cursor: pointer;
+}

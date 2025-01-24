@@ -1,0 +1,148 @@
+/* CheckOut.css */
+
+body {
+	font-family: 'Arial', sans-serif;
+	background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+.checkout-container {
+	max-width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	background: linear-gradient(135deg, #ffffff, #f4f7f6);
+	border-radius: 12px;
+	box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.checkout-container:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	color: #2c3e50;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.error {
+	background-color: #ffe6e6;
+	color: #e74c3c;
+	padding: 10px;
+	border: 1px solid #e74c3c;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.success {
+	background-color: #d4edda;
+	color: #27ae60;
+	padding: 10px;
+	border: 1px solid #c3e6cb;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.checkout-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.card-element {
+	width: 100%;
+	padding: 12px 15px;
+	font-size: 16px;
+	border: 1px solid #d1d8e0;
+	border-radius: 8px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	background-color: #f9f9f9;
+}
+
+/* Focus state */
+.card-element:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+	outline: none;
+	background-color: #ffffff;
+}
+
+/* Placeholder styling */
+.card-element::placeholder {
+	color: #95a5a6;
+	font-style: italic;
+}
+
+/* Error state */
+.card-element.error {
+	border-color: #e74c3c;
+	box-shadow: 0 0 6px rgba(231, 76, 60, 0.5);
+}
+
+label {
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+select {
+	padding: 12px 15px;
+	margin-bottom: 15px;
+	border: 1px solid #d1d8e0;
+	border-radius: 8px;
+	transition: border-color 0.3s;
+	background-color: #f9f9f9;
+}
+
+/* Focus state */
+input[type="email"]:focus,
+input[type="text"]:focus,
+select:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+	outline: none;
+	background-color: #ffffff;
+}
+
+button {
+	padding: 12px 20px;
+	background: linear-gradient(135deg, #3498db, #2980b9);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+	background: linear-gradient(135deg, #2980b9, #1c6e9a);
+	transform: translateY(-3px);
+}
+
+button:disabled {
+	background-color: #bdc3c7;
+	cursor: not-allowed;
+}
+
+.CardElement {
+	padding: 12px 15px;
+	border: 1px solid #d1d8e0;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	transition: border-color 0.3s;
+	background-color: #f9f9f9;
+}
+
+.CardElement--focus {
+	border-color: #3498db;
+}

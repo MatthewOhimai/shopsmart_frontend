@@ -1,0 +1,39 @@
+.admin-navbar{
+    display: flex;
+    box-shadow: 5px 5px 5px #eee;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.admin-navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.admin-navbar-left img{
+    width: 50px;
+}
+.admin-navbar-logo{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2
+}
+.admin-navbar-text{
+    font-size: 12px;
+    color: #ff4141;
+}
+.admin-navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.admin-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
