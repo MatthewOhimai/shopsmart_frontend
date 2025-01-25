@@ -7,7 +7,7 @@ const RelatedProducts = () => {
 	const { all_product } = useContext(ShopContext);
 
 	// Slice the first 4 products to display as related items
-	const relatedProducts = all_product.slice(5, 8);
+	const relatedProducts = all_product.slice(5, 9);
 
 	return (
 		<div className="relatedproducts">
